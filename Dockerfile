@@ -5,7 +5,7 @@ LABEL   com.redhat.component="https://pagure.io/modularity/issues" \
         name="$FGC/$NAME" \
         version="$VERSION" \
         release="$RELEASE.$DISTTAG" \
-        usage="docker run --rm -it fedora:26-modular /bin/bash" \
+        usage="docker run --rm -it registry.fedoraproject.org/f26/boltron /bin/bash" \
         summary="Boltron will provide you a running and useful version of the Modular Server Preview."
 COPY ./README.md /README.md
 RUN microdnf install dnf
